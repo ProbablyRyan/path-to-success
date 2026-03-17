@@ -65,8 +65,14 @@ table {
 }
 
 /* GLOBAL STYLES */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
     font-family: 'Inter', sans-serif;
+    max-width: 450px;
 }
 
 h1, h2 {
