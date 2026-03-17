@@ -98,3 +98,15 @@ h3 {
 h4 {
     font-size: 1.15em;
 }
+
+/* HEADER */
+.hero {
+    background-color: var(--purple);
+    text-align: center;
+    color: var(--white);
+    padding: 48px 24px;
+}
+
+.hero p {
+    font-style: italic;
+}
