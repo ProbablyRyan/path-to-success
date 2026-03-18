@@ -106,13 +106,16 @@ h4 {
 .nav-menu h3,
 .our-services > h2,
 .service-group > h3,
-.why-choose-us > h2 {
+.why-choose-us > h2,
+.pricing > h2,
+.pricing-group > h3 {
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
 }
 
 .nav-menu a,
-.card {
+.card,
+.table-container {
     margin-left: var(--padding-content-x);
     margin-right: var(--padding-content-x);
 }
@@ -259,4 +262,56 @@ h4 {
 .why-card--lavender p,
 .why-card--white p {
     margin-bottom: 1em;
+}
+
+/* PRICING */
+.pricing {
+    background-color: var(--purple);
+    padding-top: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing > h2 {
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.pricing-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing-group + .pricing-group {
+    margin-top: 12px;
+}
+
+.pricing-group > h3 {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.table-container table {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+.pricing th,
+.pricing td {
+    border: 2px solid var(--yellow);
+    padding: 14px 20px;
+}
+
+.pricing thead th {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.pricing tbody td {
+    background-color: var(--white);
 }
