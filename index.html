@@ -11,14 +11,16 @@
         <h1>Path to Success</h1>
         <p>Unlock your full potential</p>
     </header>
-    <section class="nav-menu">
-        <h3>Menu</h3>
-        <a href="#">Our Services</a>
-        <a href="#">Why Choose Us</a>
-        <a href="#">Prices</a>
-        <a href="#">Take the First Step</a>
-    </section>
-    <section class="our-services">
+    <nav class="nav-menu" aria-labelledby="nav-menu-heading">
+        <h2 id="nav-menu-heading" class="nav-menu__heading">Menu</h2>
+        <ul class="nav-menu__list">
+            <li><a href="#our-services">Our Services</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#pricing">Prices</a></li>
+            <li><a href="#cta">Take the First Step</a></li>
+        </ul>
+    </nav>
+    <section class="our-services" id="our-services">
         <h2>Our Services</h2>
 
         <div class="service-group">
@@ -73,7 +75,7 @@
         </div>
 
     </section>
-    <section class="why-choose-us">
+    <section class="why-choose-us" id="why-choose-us">
         <h2>Why Choose Us</h2>
         <div class="why-grid">
             <div class="why-card why-card--teal">
@@ -90,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <h2>Pricing</h2>
 
         <div class="pricing-group">
@@ -194,7 +196,7 @@
         </div>
 
     </section>
-    <section class="cta">
+    <section class="cta" id="cta">
         <h2>Take the First Step Today</h2>
         <p>Your journey to a more fulfilling life begins with a single step. Book a free 30-minute consultation today to discover how our coaching services can help you achieve your goals. Let's work together to create the life you've always dreamed of!</p>
         <a href="#" class="cta-button">Schedule Now</a>

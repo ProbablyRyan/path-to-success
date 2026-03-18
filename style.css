@@ -100,7 +100,7 @@ h4 {
 
 /* SECTION PADDING */
 header,
-.nav-menu h3,
+.nav-menu__heading,
 .our-services > h2,
 .service-group > h3,
 .why-choose-us > h2,
@@ -147,17 +147,23 @@ header p {
     background-color: var(--yellow);
     padding-top: 16px;
     padding-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
-.nav-menu h3 {
+.nav-menu__heading {
     text-align: center;
     text-transform: uppercase;
     font-style: italic;
     font-weight: var(--font-weight-heavy);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
     color: var(--dark-gray);
+    margin-bottom: 12px;
+}
+
+.nav-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .nav-menu a {
