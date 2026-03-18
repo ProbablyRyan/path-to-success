@@ -102,7 +102,7 @@ h4 {
 }
 
 /* SECTION PADDING */
-.hero,
+header,
 .nav-menu h3,
 .our-services > h2,
 .service-group > h3,
@@ -128,7 +128,7 @@ h4 {
 }
 
 /* HEADER */
-.hero {
+header {
     background-color: var(--purple);
     text-align: center;
     color: var(--white);
@@ -136,11 +136,11 @@ h4 {
     padding-bottom: 32px;
 }
 
-.hero h1 {
+header h1 {
     margin-bottom: 12px;
 }
 
-.hero p {
+header p {
     font-style: italic;
 	line-height: 1.5;
 }
@@ -353,4 +353,25 @@ h4 {
     border-radius: 16px;
     text-decoration: none;
     box-shadow: 4px 4px 3px var(--dark-gray);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--purple);
+    display: flex;
+    padding: 48px 0;
+}
+
+footer p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
 }
