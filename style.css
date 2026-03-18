@@ -108,16 +108,23 @@ h4 {
 .service-group > h3,
 .why-choose-us > h2,
 .pricing > h2,
-.pricing-group > h3 {
+.pricing-group > h3,
+.cta > h2 {
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
 }
 
 .nav-menu a,
 .card,
-.table-container {
+.table-container,
+.cta p {
     margin-left: var(--padding-content-x);
     margin-right: var(--padding-content-x);
+}
+
+.cta-button {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /* HEADER */
@@ -314,4 +321,36 @@ h4 {
 
 .pricing tbody td {
     background-color: var(--white);
+}
+
+/* CTA */
+.cta {
+    background-color: var(--pink);
+    padding-top: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cta > h2 {
+    color: var(--white);
+}
+
+.cta p {
+    color: var(--white);
+    line-height: 1.4;
+}
+
+.cta-button {
+    display: block;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 22px 16px;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: 4px 4px 3px var(--dark-gray);
 }
