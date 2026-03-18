@@ -62,7 +62,7 @@ table {
     --pink: #D9526F;
     --dark-gray: #1E1E1E;
     --white: #ffffff;
-    --padding-x: 12px;
+    --padding-x: 16px;
     --padding-content-x: 24px;
     --font-weight-heavy: 800;
 }
@@ -106,15 +106,15 @@ header,
 .why-choose-us > h2,
 .pricing > h2,
 .pricing-group > h3,
-.cta > h2 {
+.cta > h2,
+.cta p {
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
 }
 
 .nav-menu a,
 .card,
-.table-container,
-.cta p {
+.table-container {
     margin-left: var(--padding-content-x);
     margin-right: var(--padding-content-x);
 }
