@@ -64,6 +64,7 @@ table {
     --white: #ffffff;
     --padding-x: 24px;
     --padding-y: 48px;
+    --padding-y-sm: 24px;
 }
 
 /* GLOBAL STYLES */
@@ -75,7 +76,6 @@ table {
 body {
     font-family: 'Inter', sans-serif;
     max-width: 450px;
-	line-height: 1.5;
 }
 
 h1, h2 {
@@ -119,4 +119,35 @@ section {
 
 .hero p {
     font-style: italic;
+	line-height: 1.5;
+}
+
+/* NAV MENU */
+.nav-menu {
+    background-color: var(--yellow);
+    padding-top: var(--padding-y-sm);
+    padding-bottom: var(--padding-y-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-menu h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.nav-menu a {
+    display: block;
+    background-color: var(--white);
+    color: var(--purple);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px;
+    border: 1px solid var(--white);
+    text-decoration: none;
 }
