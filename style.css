@@ -62,9 +62,8 @@ table {
     --pink: #D9526F;
     --dark-gray: #1E1E1E;
     --white: #ffffff;
-    --padding-x: 24px;
-    --padding-y: 48px;
-    --padding-y-sm: 24px;
+    --padding-x: 12px;
+    --padding-content-x: 24px;
 }
 
 /* GLOBAL STYLES */
@@ -103,9 +102,18 @@ h4 {
 }
 
 /* SECTION PADDING */
-section {
+.hero,
+.nav-menu h3,
+.our-services > h2,
+.service-group > h3 {
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
+}
+
+.nav-menu a,
+.card {
+    margin-left: var(--padding-content-x);
+    margin-right: var(--padding-content-x);
 }
 
 /* HEADER */
@@ -113,8 +121,12 @@ section {
     background-color: var(--purple);
     text-align: center;
     color: var(--white);
-    padding-top: var(--padding-y);
-    padding-bottom: var(--padding-y);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.hero h1 {
+    margin-bottom: 12px;
 }
 
 .hero p {
@@ -125,18 +137,18 @@ section {
 /* NAV MENU */
 .nav-menu {
     background-color: var(--yellow);
-    padding-top: var(--padding-y-sm);
-    padding-bottom: var(--padding-y-sm);
+    padding-top: 16px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .nav-menu h3 {
     text-align: center;
     text-transform: uppercase;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--dark-gray);
 }
 
@@ -146,8 +158,61 @@ section {
     color: var(--purple);
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
     padding: 16px;
     border: 1px solid var(--white);
     text-decoration: none;
+}
+
+/* OUR SERVICES */
+.our-services {
+    background-color: var(--purple);
+    padding-top: 24px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-services > h2 {
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.service-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service-group + .service-group {
+    margin-top: 16px;
+}
+
+.service-group > h3 {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.card img {
+    display: block;
+    margin: 20px 0 0 20px;
+}
+
+.card h4 {
+    color: var(--purple);
+    font-weight: 800;
+    padding: 20px 20px 8px;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-weight: 500;
+    line-height: 1.5;
 }
