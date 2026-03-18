@@ -62,6 +62,8 @@ table {
     --pink: #D9526F;
     --dark-gray: #1E1E1E;
     --white: #ffffff;
+    --padding-x: 24px;
+    --padding-y: 48px;
 }
 
 /* GLOBAL STYLES */
@@ -73,6 +75,7 @@ table {
 body {
     font-family: 'Inter', sans-serif;
     max-width: 450px;
+	line-height: 1.5;
 }
 
 h1, h2 {
@@ -99,12 +102,19 @@ h4 {
     font-size: 1.15em;
 }
 
+/* SECTION PADDING */
+section {
+    padding-left: var(--padding-x);
+    padding-right: var(--padding-x);
+}
+
 /* HEADER */
 .hero {
     background-color: var(--purple);
     text-align: center;
     color: var(--white);
-    padding: 48px 24px;
+    padding-top: var(--padding-y);
+    padding-bottom: var(--padding-y);
 }
 
 .hero p {
