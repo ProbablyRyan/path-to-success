@@ -22,35 +22,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ROOT VARIABLES */
@@ -76,6 +76,7 @@ table {
 body {
     font-family: 'Inter', sans-serif;
     max-width: 450px;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -100,7 +101,7 @@ h4 {
 
 /* SECTION PADDING */
 header,
-.nav-menu__heading,
+nav h2,
 .our-services > h2,
 .service-group > h3,
 .why-choose-us > h2,
@@ -112,9 +113,8 @@ header,
     padding-right: var(--padding-x);
 }
 
-.nav-menu a,
-.card,
-.table-container {
+nav a,
+.card {
     margin-left: var(--padding-content-x);
     margin-right: var(--padding-content-x);
 }
@@ -139,17 +139,17 @@ header h1 {
 
 header p {
     font-style: italic;
-	line-height: 1.5;
+    line-height: 1.5;
 }
 
 /* NAV MENU */
-.nav-menu {
+nav {
     background-color: var(--yellow);
     padding-top: 16px;
     padding-bottom: 24px;
 }
 
-.nav-menu__heading {
+nav h2 {
     text-align: center;
     text-transform: uppercase;
     font-style: italic;
@@ -160,13 +160,13 @@ header p {
     margin-bottom: 12px;
 }
 
-.nav-menu__list {
+nav ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.nav-menu a {
+nav a {
     display: block;
     background-color: var(--white);
     color: var(--purple);
@@ -262,15 +262,10 @@ header p {
     text-align: center;
 }
 
-.why-card--teal    { background-color: var(--teal); }
-.why-card--lavender { background-color: var(--lavender); }
-.why-card--yellow  { background-color: var(--yellow); }
-.why-card--white   { background-color: var(--white); }
-
-.why-card--lavender p,
-.why-card--white p {
-    margin-bottom: 1em;
-}
+.why-card:nth-child(1) { background-color: var(--teal); }
+.why-card:nth-child(2) { background-color: var(--lavender); }
+.why-card:nth-child(3) { background-color: var(--yellow); }
+.why-card:nth-child(4) { background-color: var(--white); }
 
 /* PRICING */
 .pricing {
@@ -301,7 +296,7 @@ header p {
     font-weight: bold;
 }
 
-.table-container table {
+.pricing-group table {
     width: 67.5%;
     margin: 0 auto;
 }
@@ -363,7 +358,8 @@ footer {
     padding: 48px 0;
 }
 
-footer p {
+footer small,
+footer a {
     flex: 1;
     display: flex;
     align-items: center;
@@ -373,6 +369,5 @@ footer p {
 }
 
 footer a {
-    color: var(--white);
     text-decoration: underline;
 }
